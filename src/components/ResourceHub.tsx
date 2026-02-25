@@ -48,7 +48,7 @@ const resources = [
 
 const ResourceHub = () => {
   return (
-    <section className="py-16 px-4 bg-secondary" id="biblioteca">
+    <section className="py-16 px-4 bg-background" id="biblioteca">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-2xl sm:text-3xl font-montserrat font-bold text-foreground text-center mb-10">
           Recursos para Você
