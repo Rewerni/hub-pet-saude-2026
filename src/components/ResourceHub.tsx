@@ -8,13 +8,15 @@ interface ResourceCardProps {
 }
 
 const ResourceCard = ({ title, description, tag, icon: Icon }: ResourceCardProps) => (
-  <div className="group flex flex-col rounded-lg border border-border bg-card p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-1">
-    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-      <Icon size={24} className="text-primary" strokeWidth={1.5} />
+  <div className="group flex flex-col rounded-lg border border-border bg-card p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30">
+    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-accent">
+      <Icon size={24} className="text-accent-foreground" strokeWidth={1.5} />
     </div>
     <h3 className="text-lg font-montserrat font-bold text-foreground mb-2">{title}</h3>
-    <p className="font-opensans text-muted-foreground text-base mb-4 flex-1">{description}</p>
-    <span className="inline-block self-start rounded-md bg-muted px-3 py-1 text-xs font-montserrat font-bold text-muted-foreground uppercase tracking-wider">
+    <p className="font-opensans text-muted-foreground text-base mb-5 flex-1 leading-relaxed">
+      {description}
+    </p>
+    <span className="inline-block self-start rounded-md bg-secondary px-3 py-1 text-xs font-montserrat font-bold text-muted-foreground uppercase tracking-wider">
       {tag}
     </span>
   </div>
@@ -46,7 +48,7 @@ const resources = [
 
 const ResourceHub = () => {
   return (
-    <section className="py-14 px-4 bg-muted/50">
+    <section className="py-16 px-4 bg-secondary" id="biblioteca">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-2xl sm:text-3xl font-montserrat font-bold text-foreground text-center mb-10">
           Recursos para Você
