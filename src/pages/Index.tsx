@@ -1,12 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
+import CheckInSection from "@/components/CheckInSection";
+import ResourceHub from "@/components/ResourceHub";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col bg-background">
+      <Header />
+      <main className="flex-1">
+        <HeroSection />
+        <CheckInSection />
+        <ResourceHub />
+      </main>
+      <footer className="py-8 text-center font-opensans text-sm text-muted-foreground border-t border-border">
+        © 2025 PET Saúde · UNCISAL — Todos os direitos reservados.
+      </footer>
     </div>
   );
 };
