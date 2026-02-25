@@ -36,7 +36,7 @@ const pillars = [
 
 const PillarsSection = () => {
   return (
-    <section className="py-16 px-4 bg-background">
+    <section className="py-16 px-4 bg-secondary">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-2xl sm:text-3xl font-montserrat font-bold text-foreground text-center mb-12">
           Como este espaço funciona
